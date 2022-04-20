@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CAR SALE</title>
+</head>
+<body> 
+
+<form name = "f" action="receiver.asp">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" placeholder="Name"><br><br>
+
+
+<label for="telnumber">Telephone Number:</label><br>
+<input type="number" id="telnumber" name="telnumber" placeholder="Tel"><br><br>
+
+
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" >
+   <option>Choose cars</option>
+    <option value="15000" >Ford</option>
+    <option value="40000" >Mercedes</option>
+    <option value="17000" >Toyota</option>   
+</select><br>
+
+
+<p>Please select installments:</p>
+<input type="radio" id="install" name="install" value="six">
+<label for="six">6 Months</label><br>
+<input type="radio" id="install" name="install" value="twelve">
+<label for="twelve">12 Months</label><br>
+<br><br>
+<input type="submit" onclick = "calc()" value="Submit">
+</form> 
+
+</body>
+</html> 
+
+
+
+function calc(){ 
+
+if(install === "six"){ 
+
+console.log("2% interest"); 
+
+if(cars === "15000"){ 
+
+var sip = (15000 * 2 * 6)/100 
+
+var ha = 15000 + sip 
+
+} 
+
+else if(cars === "40000"){ 
+
+var sip = (40000 * 2 * 6)/100 
+
+var ha = 40000 + sip 
+
+} 
+
+else{ 
+
+var sip = (17000 * 2 * 6)/100 
+
+var ha = 17000 + sip 
+
+} 
+
+document.getElementById("m").value = sip 
+
+document.getElementById("n").value = ha 
+
+} 
+
+else{ 
+
+console.log("4% interest"); 
+
+if(cars === "15000"){ 
+
+var hip = (15000 * 4 * 12)/100 
+
+var sa = 15000 + sip 
+
+} 
+
+else if(cars === "40000"){ 
+
+var hip = (40000 * 4 * 12)/100 
+
+var sa = 40000 + sip 
+
+} 
+
+else{ 
+
+var hip = (17000 * 4 * 12)/100 
+
+var sa = 17000 + sip 
+
+} 
+
+} 
+
+document.getElementById("m").value = hip 
+
+document.getElementById("n").value = sa 
+
+} 
+
