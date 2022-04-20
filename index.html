@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <link rel="stylesheet" type="text/css" href="ext.css">
+   <style>
+   body
+   {
+   background-color:#F0FFFF;
+   }
+   h1
+   {
+   text-decoration:underline ;
+   background-color:#F8F8FF;
+   }
+   div
+   {
+   background-color:#b0c4de;
+   }
+   </style>
+   <head>
+       <title>Car Sale</title>
+   </head>
+
+   <h1 align = "left"><b><FONT FACE = "Courier"> CAR SALE </FONT></b></h1>
+
+   <hr>
+
+<body>
+<form method = "get" action = "reciever.asp">
+<table  align = "left">
+
+ <tr>
+   <td><FONT SIZE = 5 FACE = "Courier">Name</FONT></td>
+   <td><input type = "text" name = "sn" placeholder = "Full Name"></></td>
+ </tr>
+
+ <tr>
+  <td><FONT SIZE = 5 FACE = "Courier">Mobile Number</FONT></td>
+   <td><input type = "text" name = "mob" placeholder = "+90"></></td>
+ </tr>
+
+   <br/>
+   <tr>
+       <td class="cars"><FONT FACE = "Courier"><h3>Select Car Make:</h3></FONT>
+
+       <select name="cars" id="cars">
+           <option value="select car">options</option>
+           <option value="ford" value="15000" id="Ford" >Ford - $15000 </option>
+           <option value="toyota" value="17000" id="Toyata">Toyota - $17000 </option>
+           <option value="mercedes" value="40000" id="Mercedes">Mercedes - $40000</option>
+       </select>
+   </td></tr>
+
+
+   <tr>
+   <td><FONT FACE = "Courier"><h3><b>Installments:</b></h3></FONT></td>
+   <td><input type = "radio" name = "initial" value ="2" id= "halfyear">6 months
+   <input type = "radio" name = "initial" value ="4" id="1year"checked>12 months</td>
+ </tr>
+
+
+
+   <tr>
+   <td></td>
+   <td><input type = "submit" value = "Submit">
+
+</table>
+
+</form>
+</body>
+</html>
